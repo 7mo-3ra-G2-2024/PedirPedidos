@@ -69,6 +69,20 @@ function mostrarProductos() {
     document.getElementById("productos").style.display = "block";
     // Oculta otros elementos si es necesario
 }
+function realizarPedido() {
+    // Aquí puedes agregar la lógica para realizar el pedido y registrar la ubicación
+    // Por ejemplo, podrías mostrar un formulario para que el cliente ingrese su ubicación
+    var ubicacion = prompt("Por favor, ingrese su ubicación:");
 
+    // Una vez que tienes la ubicación, podrías enviarla al servidor para procesar el pedido
+    // Esto podría ser a través de una solicitud AJAX o pasándola como parámetro en una redirección
+
+    // Por simplicidad, solo mostraremos un mensaje de confirmación aquí
+    if (ubicacion) {
+        alert("Su pedido ha sido realizado. Su ubicación: " + ubicacion);
+    } else {
+        alert("Por favor, ingrese una ubicación válida para proceder con el pedido.");
+    }
+}
     // Llama a la función para actualizar el carrito cuando la página se carga
     window.onload = actualizarCarrito;

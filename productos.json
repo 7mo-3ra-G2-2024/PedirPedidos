@@ -1,5 +1,5 @@
 [
-    {"nombre": "Producto 1", "precio": 10},
-    {"nombre": "Producto 2", "precio": 15},
-    {"nombre": "Producto 3", "precio": 20}
+    {"nombre": "Hamburguesa", "precio": 10},
+    {"nombre": "Empanadas", "precio": 15},
+    {"nombre": "Pizza", "precio": 20}
 ]

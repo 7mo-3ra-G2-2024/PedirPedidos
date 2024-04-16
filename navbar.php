@@ -11,8 +11,8 @@
             </ul>
         </div>
         <div class="navbar-auth">
-            <a href="registro.php" class="btn-register">Registro</a>
-            <a href="login.php" class="btn-login">Login</a>
+            <a href="registro.php" class="btn-register">Registrarse</a>
+            <a href="login.php" class="btn-login">Ingresar</a>
         </div>
     </div>
 </nav>

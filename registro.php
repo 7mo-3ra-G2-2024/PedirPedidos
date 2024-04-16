@@ -1,3 +1,4 @@
+
 <?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -8,14 +9,8 @@
 </head>
 <body>
     <h1>Registro de Usuario</h1>
-    <form action="procesar_registro.php" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Registrarse</button>
-    </form>
+    <p>Por favor, selecciona tu tipo de usuario:</p>
+    <a href="registro_cliente.php" class="btn-register">Registrarse como Cliente</a>
+    <a href="registro_repartidor.php" class="btn-register">Registrarse como Repartidor</a>
 </body>
 </html>
