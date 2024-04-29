@@ -1,7 +1,7 @@
 <?php 
     require('conexion.php');
     include 'navbar.php';
-    include 'carrito.php'; // Agregamos el archivo del carrito de compras
+    include 'carrito.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<h1 class="title_index">Productos Disponibles</h1>
+<h1 class="title">Productos Disponibles</h1>
     
 <div class="productos-container">
     <?php
@@ -24,6 +24,7 @@
             echo "<div class='producto'>";
             echo "<h2>" . $producto['nombre'] . "</h2>";
             echo "<p>Precio: $" . $producto['precio'] . "</p>";
+            // Agregar un botón con un identificador único para cada producto
             echo "<button onclick='agregarAlCarrito(\"" . $producto['nombre'] . "\", " . $producto['precio'] . ")'>Agregar al Carrito</button>";
             echo "</div>";
         }

@@ -11,10 +11,6 @@ function agregarProductoAlCarrito($producto, $precio, $cantidad) {
     $_SESSION['carrito'][] = $item;
 }
 
-function eliminarProductoDelCarrito($id) {
-    unset($_SESSION['carrito'][$id]);
-}
-
 function vaciarCarrito() {
     unset($_SESSION['carrito']);
 }
