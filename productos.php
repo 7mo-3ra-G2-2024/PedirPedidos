@@ -1,4 +1,6 @@
-<?php include 'navbar.php'; ?>
+<?php
+require('conexion.php');
+ include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,7 +9,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Productos Disponibles</h1>
+    <h1 class="title_productos">Productos Disponibles</h1>
     
     <div class="productos-container">
         <?php

@@ -1,4 +1,5 @@
 <?php
+    require('conexion.php');
 // Verificar si se han enviado los datos del formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario

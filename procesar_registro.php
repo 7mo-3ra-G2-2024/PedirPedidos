@@ -1,4 +1,5 @@
 <?php
+    require('conexion.php');
 // Procesar registro de usuario
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];

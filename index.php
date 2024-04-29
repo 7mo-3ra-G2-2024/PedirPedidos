@@ -1,4 +1,8 @@
-<?php include 'navbar.php'; ?>
+<?php 
+    require('conexion.php');
+    include 'navbar.php';
+    include 'carrito.php'; // Agregamos el archivo del carrito de compras
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -9,7 +13,7 @@
 </head>
 <body>
 
-<h1>Productos Disponibles</h1>
+<h1 class="title_index">Productos Disponibles</h1>
     
 <div class="productos-container">
     <?php
@@ -26,12 +30,8 @@
     ?>
 </div>
 
-<div id="carrito">
-    <h2>Carrito de Compras</h2>
-    <ul id="lista-carrito"></ul>
-    <p>Total: $<span id="total"></span></p>
-    <button onclick="realizarPedido()">Realizar Pedido</button>
-</div>
+<!-- Mostramos el carrito de compras -->
+<?php include 'carrito_componente.php'; ?>
 
 <script src="scripts.js"></script>
 </body>

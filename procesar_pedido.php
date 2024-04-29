@@ -1,4 +1,5 @@
 <?php
+    require('conexion.php');
 // Procesar pedido del usuario
 $productos = $_POST['productos'];
 $total = $_POST['total'];

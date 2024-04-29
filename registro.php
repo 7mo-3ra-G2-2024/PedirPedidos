@@ -1,5 +1,7 @@
 
-<?php include 'navbar.php'; ?>
+<?php
+    require('conexion.php');
+ include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
