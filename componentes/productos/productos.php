@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sistema de Pedidos</title>
-    <link rel="stylesheet" href="/PedirPedidos 2.0/css/estilos.css">
+    <link rel="stylesheet" href="/PedirPedidos/css/estilos.css">
 </head>
 <body>
 
