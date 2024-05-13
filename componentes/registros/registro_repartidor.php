@@ -1,6 +1,6 @@
 <?php 
   /* require('conexion.php'); */
-  include '/PedirPedidos 2.0/componentes/navbar/navbar.php'; 
+  include '../navbar/navbar.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="es">

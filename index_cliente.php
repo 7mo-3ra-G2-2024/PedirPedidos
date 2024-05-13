@@ -17,8 +17,9 @@
     
   <div class="productos-container">
     <?php
-        $productos_json = file_get_contents("componentes/productos/productos.json");
-        $productos = json_decode($productos_json, true);
+        $consulta = $conexion->prepare("SELECT * FROM item");
+        $consulta->execute();
+        $productos = $consulta->fetchAll(PDO::FETCH_ASSOC);
         
         foreach ($productos as $producto) {
             echo "<div class='producto'>";
