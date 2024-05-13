@@ -1,7 +1,7 @@
 <?php 
-    require('conexion.php');
-    include 'navbar.php';
-    include 'carrito.php';
+    /* require('conexion.php'); */
+    include 'componentes/navbar/navbar.php';
+    include 'componentes/carrito/carrito.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,15 +9,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Sistema de Pedidos</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-<h1 class="title">Productos Disponibles</h1>
+  <h1 class="title-productos">Productos Disponibles</h1>
     
-<div class="productos-container">
+  <div class="productos-container">
     <?php
-        $productos_json = file_get_contents("productos.json");
+        $productos_json = file_get_contents("componentes/productos/productos.json");
         $productos = json_decode($productos_json, true);
         
         foreach ($productos as $producto) {
@@ -29,11 +29,7 @@
             echo "</div>";
         }
     ?>
-</div>
+  </div>
 
-<!-- Mostramos el carrito de compras -->
-<?php include 'carrito_componente.php'; ?>
-
-<script src="scripts.js"></script>
 </body>
 </html>
