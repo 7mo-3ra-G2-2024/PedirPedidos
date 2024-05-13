@@ -1,12 +1,13 @@
 <?php 
- require('conexion.php');
-include 'navbar.php'; ?>
+  /* require('conexion.php'); */
+  include '/PedirPedidos 2.0/componentes/navbar/navbar.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="/PedirPedidos 2.0/css/estilos.css">
 </head>
 <body>
     <h1>Contacto</h1>
