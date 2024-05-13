@@ -1,7 +1,7 @@
 <?php 
     /* require('conexion.php'); */
-    include 'componentes/navbar/navbar.php';
-    include 'componentes/carrito/carrito.php';
+    include '/PedirPedidos 2.0/componentes/navbar/navbar.php';
+    include '/PedirPedidos 2.0/componentes/carrito/carrito.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sistema de Pedidos</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/PedirPedidos 2.0/css/estilos.css">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     
   <div class="productos-container">
     <?php
-        $productos_json = file_get_contents("componentes/productos/productos.json");
+        $productos_json = file_get_contents("productos.json");
         $productos = json_decode($productos_json, true);
         
         foreach ($productos as $producto) {
