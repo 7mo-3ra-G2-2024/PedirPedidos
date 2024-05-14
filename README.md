@@ -9,12 +9,12 @@ Los repartidores pueden registrarse en el sistema proporcionando información b�
 ### Realización de Pedidos:
 Los clientes pueden navegar por el catálogo de productos disponibles y agregar los productos deseados a su carrito de compras.
 Una vez que los clientes estén satisfechos con su selección, pueden proceder a realizar el pedido y proporcionar la dirección de entrega.
-Personalización:
+### Personalización:
 Incluye personalización orientada a un buffet.
 ## Actores:
-### Clientes:
+### Clientes
 Son los usuarios finales del sistema que realizan pedidos de productos.
-### Repartidores:
+### Repartidores
 Son los encargados de entregar los pedidos a los clientes. Se les asignan pedidos para su entrega.
 Tecnologías Utilizadas
 - Frontend: HTML, CSS, JavaScript.
@@ -23,4 +23,7 @@ Tecnologías Utilizadas
 - Autenticación: JSON Web Tokens (JWT).
 ## Conclusiones
 El Sistema de Pedidos proporciona una plataforma eficiente para que los clientes realicen pedidos y para que los repartidores gestionen las entregas. Con su diseño simple y su interfaz intuitiva, se espera mejorar la experiencia tanto para los clientes como para los repartidores.
-
+## Instalación:
+bash '''
+git clone https://github.com/tu-usuario/tu-repositorio.git
+'''
