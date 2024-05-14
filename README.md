@@ -4,6 +4,7 @@ El Sistema de Pedidos (Buffet) es una aplicación web diseñada para facilitar l
 El sistema permite a los usuarios registrarse, seleccionar productos disponibles y realizar pedidos, así como realizar un seguimiento del estado de los pedidos en tiempo real.
 ## Funcionalidades
 ![image](https://github.com/7mo-3ra-G2-2024/PedirPedidos/assets/128102337/b22eb280-9445-4b06-a28f-09ed8f65e459)
+
 Los clientes pueden registrarse en el sistema proporcionando su información básica como nombre, dirección de correo electrónico y contraseña.
 Los repartidores pueden registrarse en el sistema proporcionando información básica como nombre, dirección de correo electrónico, vehículo de entrega (si es aplicable) y contraseña.
 ### Realización de Pedidos
