@@ -7,7 +7,9 @@ El sistema permite a los usuarios registrarse, seleccionar productos disponibles
 
 Los clientes pueden registrarse en el sistema proporcionando su información básica como nombre, dirección de correo electrónico y contraseña.
 Los repartidores pueden registrarse en el sistema proporcionando información básica como nombre, dirección de correo electrónico, vehículo de entrega (si es aplicable) y contraseña.
-### Realización de Pedidos
+
+![image](https://github.com/7mo-3ra-G2-2024/PedirPedidos/assets/128102337/db63388a-ec12-44b1-87a4-2e269a3b089c)
+
 Los clientes pueden navegar por el catálogo de productos disponibles y agregar los productos deseados a su carrito de compras.
 Una vez que los clientes estén satisfechos con su selección, pueden proceder a realizar el pedido y proporcionar la dirección de entrega.
 ### Personalización
