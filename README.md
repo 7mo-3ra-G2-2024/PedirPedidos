@@ -12,7 +12,9 @@ Los repartidores pueden registrarse en el sistema proporcionando información b�
 
 Los clientes pueden navegar por el catálogo de productos disponibles y agregar los productos deseados a su carrito de compras.
 Una vez que los clientes estén satisfechos con su selección, pueden proceder a realizar el pedido y proporcionar la dirección de entrega.
-### Personalización
+
+![image](https://github.com/7mo-3ra-G2-2024/PedirPedidos/assets/128102337/8e995c32-7ab0-4974-acc2-67a5287a87a7)
+
 Incluye personalización orientada a un buffet.
 ## Actores
 ### Clientes
