@@ -24,6 +24,7 @@ Tecnologías Utilizadas
 ## Conclusiones
 El Sistema de Pedidos proporciona una plataforma eficiente para que los clientes realicen pedidos y para que los repartidores gestionen las entregas. Con su diseño simple y su interfaz intuitiva, se espera mejorar la experiencia tanto para los clientes como para los repartidores.
 ## Instalación:
-bash '''
-git clone https://github.com/tu-usuario/tu-repositorio.git
-'''
+
+```bash
+git clone https://github.com/7mo-3ra-G2-2024/PedirPedidos.git
+```
