@@ -21,7 +21,7 @@ Incluye personalización orientada a un buffet.
 Son los usuarios finales del sistema que realizan pedidos de productos.
 ### Repartidores
 Son los encargados de entregar los pedidos a los clientes. Se les asignan pedidos para su entrega.
-Tecnologías Utilizadas
+## Tecnologías Utilizadas
 - Frontend: HTML, CSS, JavaScript.
 - Backend: PHP.
 - Base de Datos: PHPmyAdmin.
