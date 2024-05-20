@@ -36,7 +36,7 @@ git clone https://github.com/7mo-3ra-G2-2024/PedirPedidos.git
 Base de datos: 
 - Descarga el archivo .sql.
 - Crea una base de datos.
-- darle en importar.
-- selecciona el archivo .sql.
-- importa la base.
+- Darle en importar.
+- Selecciona el archivo .sql.
+- Importa la base.
 
