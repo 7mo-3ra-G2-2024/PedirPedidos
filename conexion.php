@@ -1,7 +1,7 @@
 <?php
 	$user="root";
 	$psw="";
-	$dbname="nego";
+	$dbname="pedidos";
 	$host="localhost";
 
 	try{

@@ -1,7 +1,7 @@
 <?php 
     /* require('conexion.php'); */
-    include '/PedirPedidos 2.0/componentes/navbar/navbar.php';
-    include '/PedirPedidos 2.0/componentes/carrito/carrito.php';
+    include '../navbar/navbar.php';
+    // include '../carrito/carrito.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sistema de Pedidos</title>
-    <link rel="stylesheet" href="/PedirPedidos 2.0/css/estilos.css">
+    <link rel="stylesheet" href="../../css/estilos.css">
 </head>
 <body>
 

@@ -1,7 +1,7 @@
 <?php 
     /* require('conexion.php'); */
     include 'componentes/navbar/navbar.php';
-    include 'componentes/carrito/carrito.php';
+    // include 'componentes/carrito/carrito.php';
 ?>
 
 <!DOCTYPE html>
