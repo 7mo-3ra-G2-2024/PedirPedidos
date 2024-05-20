@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-05-2024 a las 01:26:38
+-- Tiempo de generación: 14-05-2024 a las 02:27:05
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -66,6 +66,37 @@ INSERT INTO `ingredientes` (`idIngrediente`, `nombre`, `cantidad`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `pedidos`
+--
+
+CREATE TABLE `pedidos` (
+  `idPedido` int(30) NOT NULL,
+  `direccion` varchar(30) NOT NULL,
+  `productos` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `productos`
+--
+
+CREATE TABLE `productos` (
+  `idProducto` int(11) NOT NULL,
+  `nombre` varchar(11) NOT NULL,
+  `precio` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`idProducto`, `nombre`, `precio`) VALUES
+(43534, 'hamburguesa', 43434);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `sucursales`
 --
 
@@ -100,6 +131,18 @@ ALTER TABLE `empleados`
 --
 ALTER TABLE `ingredientes`
   ADD PRIMARY KEY (`idIngrediente`);
+
+--
+-- Indices de la tabla `pedidos`
+--
+ALTER TABLE `pedidos`
+  ADD PRIMARY KEY (`idPedido`);
+
+--
+-- Indices de la tabla `productos`
+--
+ALTER TABLE `productos`
+  ADD PRIMARY KEY (`idProducto`);
 
 --
 -- Indices de la tabla `sucursales`
