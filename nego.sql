@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-05-2024 a las 02:27:05
+-- Tiempo de generación: 21-05-2024 a las 01:14:18
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -72,8 +72,16 @@ INSERT INTO `ingredientes` (`idIngrediente`, `nombre`, `cantidad`) VALUES
 CREATE TABLE `pedidos` (
   `idPedido` int(30) NOT NULL,
   `direccion` varchar(30) NOT NULL,
-  `productos` varchar(100) NOT NULL
+  `productos` varchar(100) NOT NULL,
+  `mail` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `pedidos`
+--
+
+INSERT INTO `pedidos` (`idPedido`, `direccion`, `productos`, `mail`) VALUES
+(234, 'erwfdgdfdf', 'panchito', '');
 
 -- --------------------------------------------------------
 
@@ -116,6 +124,28 @@ CREATE TABLE `sucursales` (
 INSERT INTO `sucursales` (`idSucursal`, `nombre`, `direccion`, `horaIngreso`, `horaSalida`, `telefono`) VALUES
 (2323, 'Super panchos', ' san juan 333', '8:00', '16:00', 911234343);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `nombre` varchar(40) NOT NULL,
+  `apellido` varchar(40) NOT NULL,
+  `dni` int(40) NOT NULL,
+  `gmail` varchar(40) NOT NULL,
+  `numero` int(40) NOT NULL,
+  `contraseña` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`nombre`, `apellido`, `dni`, `gmail`, `numero`, `contraseña`) VALUES
+('pato', 'juan', 46740997, 'patito123@gmail.com', 11234567, '64654465');
+
 --
 -- Índices para tablas volcadas
 --
@@ -136,7 +166,7 @@ ALTER TABLE `ingredientes`
 -- Indices de la tabla `pedidos`
 --
 ALTER TABLE `pedidos`
-  ADD PRIMARY KEY (`idPedido`);
+  ADD PRIMARY KEY (`mail`);
 
 --
 -- Indices de la tabla `productos`
@@ -149,6 +179,13 @@ ALTER TABLE `productos`
 --
 ALTER TABLE `sucursales`
   ADD PRIMARY KEY (`idSucursal`);
+
+--
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`gmail`),
+  ADD UNIQUE KEY `numero` (`numero`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
