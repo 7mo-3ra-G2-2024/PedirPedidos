@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-05-2024 a las 00:11:42
+-- Tiempo de generación: 21-05-2024 a las 01:14:18
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -135,15 +135,16 @@ CREATE TABLE `usuarios` (
   `apellido` varchar(40) NOT NULL,
   `dni` int(40) NOT NULL,
   `gmail` varchar(40) NOT NULL,
-  `numero` int(40) NOT NULL
+  `numero` int(40) NOT NULL,
+  `contraseña` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`nombre`, `apellido`, `dni`, `gmail`, `numero`) VALUES
-('pato', 'juan', 46740997, 'patito123@gmail.com', 11234567);
+INSERT INTO `usuarios` (`nombre`, `apellido`, `dni`, `gmail`, `numero`, `contraseña`) VALUES
+('pato', 'juan', 46740997, 'patito123@gmail.com', 11234567, '64654465');
 
 --
 -- Índices para tablas volcadas
@@ -183,7 +184,8 @@ ALTER TABLE `sucursales`
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`gmail`);
+  ADD PRIMARY KEY (`gmail`),
+  ADD UNIQUE KEY `numero` (`numero`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
