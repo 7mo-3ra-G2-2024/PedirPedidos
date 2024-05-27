@@ -1,7 +1,7 @@
 <?php 
-    /* require('conexion.php'); */
+   
     include 'componentes/navbar/navbar.php';
-    // include 'componentes/carrito/carrito.php';
+    
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
+<script src="scripts.js"></script>
   <h1 class="title-productos">Productos Disponibles</h1>
     
   <div class="productos-container">
@@ -30,6 +30,13 @@
         }
     ?>
   </div>
+
+  <div id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p>Total: $<span id="total"></span></p>
+    <button onclick="realizarPedido()">Realizar Pedido</button>
+</div>
 
 </body>
 </html>
