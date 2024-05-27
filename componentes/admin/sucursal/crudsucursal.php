@@ -14,7 +14,7 @@
             <form action="?.php">
                 <?php
                     // Incluir el archivo de conexión
-                    require '../../conexion.php';
+                    require '../../../conexion.php';
                     
                     // Obtener parámetros de filtro
                     $idSucursal = filter_input(INPUT_GET, 'idSucursal');

@@ -9,3 +9,11 @@ body{
 .title{
   text-align: center;
 }
+
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table tr, table td{
+  padding: 1em;
+}
