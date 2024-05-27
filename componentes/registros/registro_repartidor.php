@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro de Repartidor</title>
-    <link rel="stylesheet" href="/PedirPedidos 2.0/css/estilos.css">
+    <link rel="stylesheet" href="/PedirPedidos/css/estilos.css">
 </head>
 <body>
     <h1>Registro de Usuario</h1>

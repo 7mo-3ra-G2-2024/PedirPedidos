@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
-    <link rel="stylesheet" href="/PedirPedidos 2.0/css/estilos.css">
+    <link rel="stylesheet" href="/PedirPedidosm/css/estilos.css">
 </head>
 <body>
     <h1>Contacto</h1>

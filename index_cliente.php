@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
   <h1 class="title-productos">Productos Disponibles</h1>
     
   <div class="productos-container">
