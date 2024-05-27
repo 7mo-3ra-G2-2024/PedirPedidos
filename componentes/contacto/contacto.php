@@ -1,13 +1,10 @@
-<?php 
-  /* require('conexion.php'); */
-  include '../navbar/navbar.php';
-?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../../css/estilos.css">
+    <link rel="stylesheet" href="/PedirPedidosm/css/estilos.css">
 </head>
 <body>
     <h1>Contacto</h1>
