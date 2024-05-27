@@ -28,7 +28,7 @@
       </div>
       <h3>Ver Ventas</h3>
     </a>
-    <a href='' class='option'>
+    <a href='crudsucursal.php' class='option'>
       <div class='option-upper-div'>
         <img src='https://t3.ftcdn.net/jpg/01/10/68/02/360_F_110680229_vf4Kpwnk6axfenTvelXQLb8XkJ8jnO5Y.jpg'>
       </div>
