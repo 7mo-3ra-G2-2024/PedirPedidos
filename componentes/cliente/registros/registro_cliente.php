@@ -1,4 +1,4 @@
-<?php 
+<?php
   /* require('conexion.php'); */
   include '../navbar/navbar.php'; 
 ?>
@@ -6,8 +6,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registro de Repartidor</title>
-    <link rel="stylesheet" href="../../css/estilos.css">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../../../css/estilos.css">
 </head>
 <body>
     <h1>Registro de Usuario</h1>
