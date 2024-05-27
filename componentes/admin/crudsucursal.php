@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>Administrar Sucursales</title>
+    <link rel='stylesheet' href='sucursal.css'>
 </head>
 <body>
 <div class="content">
-    <div class="title">Administrar Sucursales</div>
+    <h2 class='title'>Administrar Sucursales</h2>
     <div class="info">
         <div class="lateral">
         </div>

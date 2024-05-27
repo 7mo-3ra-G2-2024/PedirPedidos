@@ -22,7 +22,7 @@
       </div>
       <h3>Ver Empleados</h3>
     </a>
-    <a href='' class='option'>
+    <a href='../stats/stats.php' class='option'>
       <div class='option-upper-div'>
         <img src='https://t3.ftcdn.net/jpg/05/46/46/14/360_F_546461498_eAK0ADH2mE0Y1VNG7wpjIgtXFxT0mR0a.jpg'>
       </div>
