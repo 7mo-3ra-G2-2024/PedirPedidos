@@ -1,0 +1,6 @@
+[
+    {"nombre": "Hamburguesa", "precio": 10},
+    {"nombre": "Empanadas", "precio": 15},
+    {"nombre": "Pizza", "precio": 20},
+    {"nombre": "Milanesa napolitana", "precio": 25}
+]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Estadísticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="statistics-panel">
+        <h2>Ventas del Día</h2>
+        <div id="daily-sales" class="stats"></div>
+        <h2>Productos</h2>
+        <div id="product-stats" class="circle">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="orange"></span>
+            <span class="green"></span> <!-- Nuevo producto -->
+        </div>
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color red"></div>
+                Hamburguesas
+                <span class="availability">10: Disponible</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color yellow"></div>
+                Pizzas
+                <span class="availability">20: Agotado</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color orange"></div>
+                Empanadas
+                <span class="availability"> 20: Disponible </span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color green"></div> <!-- Nuevo producto -->
+                Milanesa Napolitana
+                <span class="availability"> 50: Disponible </span> <!-- Datos ficticios -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
