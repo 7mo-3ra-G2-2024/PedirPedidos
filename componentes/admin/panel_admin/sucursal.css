@@ -1,0 +1,11 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  
+  display: grid;
+  place-content: center;
+}
+
+.title{
+  text-align: center;
+}
