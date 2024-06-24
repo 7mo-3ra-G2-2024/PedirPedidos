@@ -16,8 +16,23 @@
             </ul>
         </div>
         <div class="navbar-auth">
-            <a href="/PedirPedidos/componentes/cliente/registros/registro.php" class="btn-register">Registrarse</a>
-            <a href="/PedirPedidos/componentes/cliente/login/login.php" class="btn-login">Ingresar</a>
+            <?php
+                session_start();
+
+                if(isset($_SESSION['idUsuario'])){
+
+                    echo "<a href='../login/logout.php' class='btn-logout'>Cerrar Sesión</a>";
+                    
+                }
+                else{
+
+                    echo "<a href='/PedirPedidos/componentes/cliente/registros/registro.php' class='btn-register'>Registrarse</a>";
+                    echo "<a href='/PedirPedidos/componentes/cliente/login/login.php' class='btn-login'>Ingresar</a>";
+
+                }
+            ?>
+            
+            
         </div>
     </div>
 </nav>
