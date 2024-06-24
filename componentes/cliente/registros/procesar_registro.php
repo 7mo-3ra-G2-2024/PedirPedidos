@@ -1,13 +1,33 @@
 <?php
-  /* require('/conexion.php'); */
+  require('../../../conexion.php'); 
   // Procesar registro de usuario
-  $nombre = $_POST['nombre'];
-  $email = $_POST['email'];
-  $password = $_POST['password'];
+  
+  $password = filter_input(INPUT_POST, "password");
 
-  // Aquí puedes agregar el código para almacenar los datos en la base de datos o en un archivo, etc.
-  // Por simplicidad, no se incluye esa parte en este ejemplo.
+  if($password != $_POST['passwordConfirm']){
+    header("Location:registro_cliente.php?unequalPass");
+    exit();
+  }
 
-  echo "<h1>Registro Exitoso</h1>";
-  echo "<p>Bienvenido, $nombre. Su registro ha sido exitoso.</p>";
+  $email = filter_input(INPUT_POST, "email");
+  $password = md5($password);
+
+  
+  $query = $conexion->prepare("SELECT email FROM usuarios WHERE email = '$email'");
+
+  $query->execute();
+  $query = $query->fetchAll(PDO::FETCH_ASSOC);
+
+  if(count($query) < 1){
+
+    $name = filter_input(INPUT_POST, "nombre");
+
+    $query = $conexion->prepare("INSERT INTO usuarios (`nombre`, `email`, `password`) VALUES ('$name', '$email', '$password')");
+    if($query->execute()){
+      header("Location:../login/login.php?successfulRegister");
+    }
+
+  }
+  else{ header("Location:registro_cliente.php?usedEmail"); }
+
 ?>

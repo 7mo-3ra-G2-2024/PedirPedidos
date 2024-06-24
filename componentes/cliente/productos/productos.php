@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="../../../css/estilos.css">
 </head>
 <body>
-
-  <h1 class="title-productos">Productos Disponibles</h1>
     
+  <h1 style="text-align: center;">Productos</h1>
   <div class="productos-container">
     <?php
         $productos_json = file_get_contents("productos.json");
@@ -24,10 +23,28 @@
             echo "<div class='producto'>";
             echo "<h2>" . $producto['nombre'] . "</h2>";
             echo "<p>Precio: $" . $producto['precio'] . "</p>";
-            // Agregar un botón con un identificador único para cada producto
+
             echo "<button onclick='agregarAlCarrito(\"" . $producto['nombre'] . "\", " . $producto['precio'] . ")'>Agregar al Carrito</button>";
             echo "</div>";
         }
+    ?>
+  </div>
+  <hr>
+
+  <h1 style="text-align: center;">Combos</h1>
+  <div class="combos-container">
+    <?php
+      $file = file_get_contents("combos.json");
+      $combos = json_decode($file, true);
+
+      foreach($combos as $combo){
+        echo "<div class='producto'>";
+            echo "<h2>" . $combo['nombre'] . "</h2>";
+            echo "<p>Precio: $" . $combo['precio'] . "</p>";
+
+            echo "<button onclick='agregarAlCarrito(\"" . $combo['nombre'] . "\", " . $combo['precio'] . ")'>Agregar al Carrito</button>";
+            echo "</div>";
+      }
     ?>
   </div>
       

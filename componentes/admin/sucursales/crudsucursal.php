@@ -15,7 +15,7 @@
             <form action="?.php">
                 <?php
                     // Incluir el archivo de conexión
-                    require 'conexion.php';
+                    require '../../../conexion.php';
                     
                     // Obtener parámetros de filtro
                     $idSucursal = filter_input(INPUT_GET, 'idSucursal');
@@ -31,15 +31,10 @@
                     $datos = $consulta->fetchAll(PDO::FETCH_ASSOC);
 
                     // Generar la tabla con los resultados
-                    echo '<center><table border=3>
-                    <tr>
-                        <td>idSucursal</td><td>Nombre</td><td>Direccion</td><td>Hora de ingreso</td><td>Hora de salida</td><td>Telefono</td><td>Eliminar</td><td>Editar</td>
-                        <td><a style="font-size:80%;" href="agregarSucursal.html">Ingresar Sucursal</a></td>  <td><a style="font-size:80%;" href="listado.php">Ver stock</a></td>
-                    </tr></center>';
+                    echo '<center><table border=3><tr><td>Nombre</td><td>Direccion</td><td>Hora de ingreso</td><td>Hora de salida</td><td>Telefono</td><td>Eliminar</td><td>Editar</td><td><a style="font-size:80%;" href="agregarSucursal.html">Ingresar Sucursal</a></td></tr></center>';
 
                     foreach ($datos as $elemento) {
                         echo "<tr>
-                            <td>{$elemento['idSucursal']}</td>
                             <td>{$elemento['nombre']}</td>
                             <td>{$elemento['direccion']}</td>
                             <td>{$elemento['horaIngreso']}</td>
@@ -47,6 +42,7 @@
                             <td>{$elemento['telefono']}</td>
                             <td><a style='font-size:80%;' href='eliminarSucursal.php?ubi_idSucursal={$elemento['idSucursal']}'>ELIMINAR</a></td>
                             <td><a style='font-size:80%;' href='editarSucursal.php?ubi_idSucursal={$elemento['idSucursal']}'>EDITAR</a></td>
+                            <td><a style='font-size:80%;' href='listado.php?ubi_idSucursal={$elemento['idSucursal']}'>Ver stock</a></td>
                         </tr>";
                     }
                 ?>
