@@ -1,12 +1,13 @@
 <?php
-// Empezar la sesión
 session_start();
-try {
-    $conexion = new PDO('mysql:host=localhost;dbname=nego', 'root', '');
-    $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Could not connect to the database: " . $e->getMessage());
-}
+	try{
+		$conexion = new PDO('mysql:host=localhost;dbname=nego', 'root', '');
+        $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "<script>console.log('Se conecto a la base de datos correctamente');</script>";
+	}catch(PDOException $e){
+		echo "<script>console.log('No se pudo conectar a la base de datos');</script>";
+	}
+
 function Borrar($conexion, $ubi_idSucu, $tabla){
     $consulta = $conexion->prepare("DELETE FROM $tabla WHERE idSucursal=:ubi_idSucu");
     $consulta->bindParam(":ubi_idSucu", $ubi_idSucu);
@@ -21,7 +22,7 @@ function Borrar($conexion, $ubi_idSucu, $tabla){
     $consulta->bindParam(':n_nom',$n_nombre);
     $consulta->bindParam(':n_dire',$n_direccion);
     $consulta->bindParam(':n_horaIn',$n_horaIngreso);
-$consulta->bindParam(':n_horaS',$n_horaSal);
+    $consulta->bindParam(':n_horaS',$n_horaSal);
     $consulta->bindParam(':n_tel',$n_telefono);
     $consulta->bindParam(':ubi_idSucu',$ubi_idSucursal);//este debe ser igual
     $consulta->execute();
@@ -39,4 +40,11 @@ $consulta->bindParam(':n_horaS',$n_horaSal);
     $consulta->bindParam(':ubi_idSucu', $idSucursal);
     $consulta->execute();
     echo "<script>alert('Se modificó con éxito');</script>";
+}
+
+function verificarUsuario($conexion,$user){
+    $consulta=$conexion->prepare("SELECT * FROM `admins` WHERE nombre='$user'");
+    $consulta->execute();
+	$datos = $consulta->fetchAll(PDO::FETCH_ASSOC);
+    return $datos;
 }
