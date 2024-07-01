@@ -29,7 +29,7 @@
         }
     ?>
   </div>
-  <hr>
+  <hr style="width:100%">
 
   <h1 style="text-align: center;">Combos</h1>
   <div class="combos-container">

@@ -15,7 +15,9 @@
         
         $email = filter_input(INPUT_POST, "email");
 
-        $query = $conexion->prepare("SELECT * FROM usuarios WHERE email = '$email'");
+        $userType = $_POST['user-type'];
+
+        $query = $conexion->prepare("SELECT * FROM $userType WHERE `email` = '$email'");
 
         $query->execute();
         $data = $query->fetchAll(PDO::FETCH_ASSOC);
