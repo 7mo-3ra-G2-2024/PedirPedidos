@@ -79,6 +79,8 @@
             <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
             <input type="password" id="password" name="password" placeholder="Clave" required>
             <input type="password" id="password" name="passwordConfirm" placeholder="Confirmar Clave" required>
+
+            <input type="hidden" name="user-type" value="usuarios">
             <input type="submit" value="Registrarse">
         </form>
     </div>

@@ -66,6 +66,7 @@
 <body>
     <div class="form-container">
         <h1>Iniciar Sesión</h1>
+        <p style="width: 100%; text-align: center;">Cliente</p>
         <form action="procesar_login.php" method="POST">
             <?php
                 if(isset($_GET['successfulRegister'])){
@@ -84,7 +85,11 @@
             ?>
             <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
             <input type="password" id="password" name="password" placeholder="Clave" required>
+
+            <input type="hidden" name="user-type" value="usuarios">
             <input type="submit" name="submit" value="Iniciar Sesión">
+
+            <a href="login_repartidor.php">Ingresar como Repartidor</a>
         </form>
     </div>
 </body>

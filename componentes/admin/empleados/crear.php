@@ -4,7 +4,7 @@ if(isset($_POST['submit'])) {
     $apellido = $_POST['apellido'];
     $edad = $_POST['DNI'];
 
-    $sql = "INSERT INTO empleados (nombre, apellido, edao) VALUES ('$nombre', '$apellido', $dni)";
+    $sql = "INSERT INTO empleados (nombre, apellido, edad) VALUES ('$nombre', '$apellido', $dni)";
 
     if ($conn->query($sql) === TRUE) {
         echo "Empleado creado correctamente";
