@@ -40,6 +40,12 @@
       </div>
       <h3>Administrar Productos</h3>
     </a>
+    <a href='../caja/index.php' class='option'>
+      <div class='option-upper-div'>
+        <img src='https://cdn-icons-png.flaticon.com/512/1198/1198290.png'>
+      </div>
+      <h3>Caja</h3>
+    </a>
     <hr style='width:100%;'>
   </div>
 </body>

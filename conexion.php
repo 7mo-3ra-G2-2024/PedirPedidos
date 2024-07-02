@@ -43,8 +43,9 @@ function Borrar($conexion, $ubi_idSucu, $tabla){
 }
 
 function verificarUsuario($conexion,$user){
-    $consulta=$conexion->prepare("SELECT * FROM `admins` WHERE nombre='$user'");
+    $consulta=$conexion->prepare("SELECT * FROM `usuarios` WHERE nombre='$user'");
     $consulta->execute();
 	$datos = $consulta->fetchAll(PDO::FETCH_ASSOC);
     return $datos;
 }
+
